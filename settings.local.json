@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Read",
+      "Edit",
+      "Write",
+      "WebFetch",
+      "Agent",
+      "Workflow",
+      "Skill",
+      "ToolSearch",
+      "mcp__atlassian__jira_*",
+      "mcp__atlassian__confluence_*",
+      "mcp__github-mcp-server__*",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:artifactory.tools.3stripes.net)",
+      "Bash(rm -f .git/index.lock)",
+      "Bash(git add *)",
+      "Read(//Users/yadavsud/Library/CloudStorage/OneDrive-adidas/Documents/CCM_workspace/cmp-calendar-e2e/**)"
+    ],
+    "deny": []
+  },
+  "sandbox": {
+    "network": {
+      "deniedDomains": [
+        "registry.npmjs.org"
+      ]
+    },
+    "filesystem": {
+      "allowRead": [
+        ".env"
+      ]
+    }
+  }
+}

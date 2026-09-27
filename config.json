@@ -1,0 +1,18 @@
+{
+  "$schema": "./context/README.md",
+  "contextSources": [
+    {
+      "url": "https://github.com/bct-adidas/cfccm-cmp-portal",
+      "name": "cmp-portal",
+      "branch": "main",
+      "paths": [
+        "force-app/main/default/aura/CM_CampaignCalendarReact",
+        "force-app/main/default/aura/CM_Mini_Calendar",
+        "force-app/main/default/aura/CM_Campaign_Timelines",
+        "force-app/main/default/staticresources"
+      ],
+      "why": "Consumes the CampaignCalendar static-resource bundle built by this repo via <lightning:container> in the CM_CampaignCalendarReact and CM_Mini_Calendar Aura components, and drives the bidirectional postMessage protocol with it."
+    },
+    "local:libraries-api"
+  ]
+}
